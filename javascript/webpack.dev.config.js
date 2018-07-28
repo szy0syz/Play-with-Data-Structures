@@ -7,6 +7,14 @@ module.exports = {
     path: __dirname,
     filename: './release/bundle.js'
   },
+  
+  module: {
+    rules: [{ 
+      test: /\.js?$/,  // 我们要去检验哪些文件
+      exclude: /(node_modules)/,  // 跳过哪些文件
+      loader: 'babel-loader'  // 使用的loader
+    }]
+  },
 
   plugins: [
     new HtmlWebpackPlugin({
