@@ -1,13 +1,5 @@
-class Person {
-  constructor(name) {
-    this.name = name
-  }
+import DArray from './Array/02-Create-Our-Array'
 
-  getName() {
-    return this.name
-  }
-}
+const ary = new DArray()
 
-let p = new Person('jerry')
-
-console.log(p.getName())
+console.log(ary.getSize())
